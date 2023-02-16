@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
+import Time from "./Time"
 
 function App() {
 
@@ -23,7 +23,10 @@ function App() {
 
           <section className='center-content'>
             <h1>Welcome John</h1>
-            <div className="upper box"></div>
+            <div className="upper box">
+              <p>Days until my birthday.</p>
+              <Time />
+            </div>
             <h2>Campaigns</h2>
             <div className='lower box'></div>
           </section>
