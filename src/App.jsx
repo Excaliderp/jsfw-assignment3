@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 import Time from "./Time"
+import "./fonts/khula-regular-webfont.woff"
+import "./fonts/khula-regular-webfont.woff2"
 
 function App() {
 
@@ -11,23 +13,23 @@ function App() {
         <section className='outer box'>
 
           <div className='left-content'>
-            <h2>Logo</h2>
+            <p>Logo</p>
             <div className="nav-menu">
-              <p className='nav-bar'>Dashboard</p>
-              <p className='nav-bar'>Alerts</p>
-              <p className='nav-bar'>Studio</p>
-              <p className='nav-bar'>Reports</p>
-              <p className='nav-bar'>Settings</p>
+              <p className='nav-bar'>DASHBOARD</p>
+              <p className='nav-bar'>ALERTS</p>
+              <p className='nav-bar'>STUDIO</p>
+              <p className='nav-bar'>REPORTS</p>
+              <p className='nav-bar'>SETTINGS</p>
             </div>
           </div>
 
           <section className='center-content'>
-            <h1>Welcome John</h1>
+            <h2>Welcome, <span className='bold'>John</span></h2>
             <div className="upper box">
-              <p>Days until my birthday.</p>
+              <p className='bold '>Days until my birthday.</p>
               <Time />
             </div>
-            <h2>Campaigns</h2>
+            <h3>Campaigns</h3>
             <div className='lower box'></div>
           </section>
 

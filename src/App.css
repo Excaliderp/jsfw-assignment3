@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-family: khularegular;
 }
 
 * {
@@ -10,8 +11,18 @@
 }
 
 h1,
-h2 {
+h2,
+h3 {
   text-align: left;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.bold {
+  font-family: khulabold;
 }
 
 body {
@@ -79,4 +90,51 @@ main {
 
 .lower {
   height: 325px;
+}
+
+
+
+@font-face {
+    font-family: 'khulabold';
+    src: url('./fonts/khula-bold-webfont.woff2') format('woff2'),
+         url('./fonts/khula-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'khulaextrabold';
+    src: url('./fonts/khula-extrabold-webfont.woff2') format('woff2'),
+         url('./fonts/khula-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'khulalight';
+    src: url('./fonts/khula-light-webfont.woff2') format('woff2'),
+         url('./fonts/khula-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'khularegular';
+    src: url('./fonts/khula-regular-webfont.woff2') format('woff2'),
+         url('./fonts/khula-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'khulasemibold';
+    src: url('./fonts/khula-semibold-webfont.woff2') format('woff2'),
+         url('./fonts/khula-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
