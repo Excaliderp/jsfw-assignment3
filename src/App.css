@@ -58,7 +58,7 @@ main {
   height: 56px;
   padding: 20px;
   text-align: center;
-  justify-content: center;
+  text-justify: center;
   width: 188px;
 }
 
