@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import './App.css'
 import Time from "./Time"
-import Homebutton from "./images/Homebutton.png"
+import Homebutton from "./images/homebutton.png"
 import Settingsbutton from "./images/settingsbutton.png"
-import jag from "./images/jag.jpg"
+import Jag from "./images/jag.jpg"
 import "./fonts/khula-regular-webfont.woff"
 import "./fonts/khula-regular-webfont.woff2"
 
@@ -38,7 +38,7 @@ function App() {
             <section className='activity'>
               <p className='activity-heading'>Activity</p>
               <div className='activity-content box'>
-                <img src={jag} />
+                <img src={Jag} />
                 <p>Timothy Karlsson<span> - 34m ago</span></p>
                 <div className='chat-bubble'>
                   <p>Hey, how's it going?</p>

@@ -150,6 +150,7 @@ main {
   letter-spacing: 1px;
   margin-top: 10px;
   padding: 20px;
+  position: relative;
   text-align: center;
   text-justify: center;
   width: 188px;
