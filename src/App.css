@@ -1,6 +1,7 @@
 #root {
-  max-width: 1280px;
+  font-family: khularegular;
   margin: 0 auto;
+  max-width: 1280px;
   padding: 2rem;
   text-align: center;
 }
@@ -10,8 +11,26 @@
 }
 
 h1,
-h2 {
+h2,
+h3 {
   text-align: left;
+}
+
+h2 {
+  font-size: 40px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+h2 span {
+  font-family: khulabold;
+}
+
+h3 {
+  font-family: khulabold;
+  font-size: 25px;
+  margin-top: 47px;
+  margin-bottom: 26px;
 }
 
 body {
@@ -19,50 +38,162 @@ body {
 }
 
 main {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
 }
 
-.box {
-  border-radius: 30px;
+.activity {
+  margin-top: 544px;
 }
 
-.outer {
-  background-color: #141627;
-  display: flex;
-  flex-direction: row;
-  height: 1024px;
-  width: 1440px;
-  padding: 40px;
-}
-
-.left-content {
-  background-color: #141627;
+.activity-heading {
+  font-size: 26px;
   text-align: left;
-  height: 100%;
-  width: 220px;
+}
+
+.activity-content {
+  background-color: #1C1F37;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  padding: 20px;
+  position: relative;
+  min-width: 380px;
+}
+
+.activity-content img {
+  border-radius: 50%;
+  left: 15px;
+  position: absolute;
+  top: 20px;
+  width: 50px;
+}
+
+.activity-content p {
+  color: #CFD2E9;
+  margin: 0;
+  margin-left: 80px;
+  text-align: left;
+}
+
+.activity-content span {
+  color: #5D6078;
+}
+
+.bold {
+  font-family: khulabold;
+  font-size: 20px;
+}
+
+.box {
+  border-radius: 20px;
+}
+
+.chat-bubble {
+  background-color: #252A43;
+  border-radius: 30px;
+  color: #777B9E;
+  height: 100px;
+  margin-top: 80px;
+  padding: 20px;
+  text-align: left;
+  width: 224px;
+}
+
+.chat-bubble p {
+  margin: 0;
 }
 
 .center-content {
   display: flex;
   flex-direction: column;
   height: 100%;
+  min-width: 720px;
+  padding-bottom: 0;
+  padding-top: 0px;
   padding: 40px;
-  width: 720px;
+}
+
+.left-content {
+  background-color: #141627;
+  height: 100%;
+  position: relative;
+  text-align: left;
+  width: 220px;
+}
+
+.left-content>p {
+  font-family: khulabold;
+  font-size: 20px;
+  left: 10px;
+  position: absolute;
+  top: -10px;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 136px;
 }
 
 .nav-bar {
-  background-color: #3B3170;
+  align-content: start;
+  background-color: transparent;
   border-radius: 15px;
+  color: #656784;
+  display: flex;
+  flex-direction: row;
+  font-family: khulabold;
+  font-size: 12px;
   height: 56px;
+  letter-spacing: 1px;
+  margin-top: 10px;
   padding: 20px;
   text-align: center;
   text-justify: center;
   width: 188px;
 }
 
+.nav-bar:hover {
+  background-color: #3B3170;
+}
+
+.nav-bar img {
+  height: 20px;
+  left: 26px;
+  position: absolute;
+  top: 18px;
+  width: 20px;
+}
+
+.nav-bar p {
+  margin-left: 46px;
+  margin-top: 2px;
+}
+
+.numbers {
+  color: #656784;
+  font-size: 15px;
+  text-align: left;
+}
+
+.outer-box {
+  background-color: #141627;
+  background-image: url(./images/background.png);
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  box-shadow: 0px 21px 27px -10px rgba(0, 0, 0, 0.68);
+  display: flex;
+  flex-direction: row;
+  min-height: 1024px;
+  min-width: 1440px;
+  padding: 40px;
+  position: relative;
+}
+
 .right-content {
+  position: relative;
   width: 380px;
 }
 
@@ -74,9 +205,75 @@ main {
 }
 
 .upper {
-  height: 390px;
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+  min-height: 390px;
+  position: relative;
+  width: 100%;
 }
 
 .lower {
-  height: 325px;
+  min-height: 325px;
+  width: 100%;
+}
+
+.watch-button {
+  background-color: #745FE1;
+  border-radius: 15px;
+  bottom: 40px;
+  height: 56px;
+  left: 40px;
+  margin: 0;
+  padding: 20px;
+  position: absolute;
+  text-align: center;
+  width: 160px;
+}
+
+
+
+@font-face {
+  font-family: 'khulabold';
+  src: url('./fonts/khula-bold-webfont.woff2') format('woff2'),
+    url('./fonts/khula-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'khulaextrabold';
+  src: url('./fonts/khula-extrabold-webfont.woff2') format('woff2'),
+    url('./fonts/khula-extrabold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'khulalight';
+  src: url('./fonts/khula-light-webfont.woff2') format('woff2'),
+    url('./fonts/khula-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'khularegular';
+  src: url('./fonts/khula-regular-webfont.woff2') format('woff2'),
+    url('./fonts/khula-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'khulasemibold';
+  src: url('./fonts/khula-semibold-webfont.woff2') format('woff2'),
+    url('./fonts/khula-semibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
 }

@@ -1,6 +1,11 @@
 import { useState } from 'react'
 import './App.css'
 import Time from "./Time"
+import Homebutton from "./images/Homebutton.png"
+import Settingsbutton from "./images/settingsbutton.png"
+import jag from "./images/jag.jpg"
+import "./fonts/khula-regular-webfont.woff"
+import "./fonts/khula-regular-webfont.woff2"
 
 function App() {
 
@@ -8,32 +13,40 @@ function App() {
   return (
     <>
       <main>
-        <section className='outer box'>
+        <section className='outer-box'>
 
           <div className='left-content'>
-            <h2>Logo</h2>
+            <p>Logo</p>
             <div className="nav-menu">
-              <p className='nav-bar'>Dashboard</p>
-              <p className='nav-bar'>Alerts</p>
-              <p className='nav-bar'>Studio</p>
-              <p className='nav-bar'>Reports</p>
-              <p className='nav-bar'>Settings</p>
+              <div className='nav-bar'><img src={Homebutton} alt="homebutton" /><p>DASHBOARD</p></div>
+              <div className='nav-bar'><img src={Settingsbutton} alt="homebutton" /><p>SETTINGS</p></div>
             </div>
           </div>
 
           <section className='center-content'>
-            <h1>Welcome John</h1>
+            <h2>Welcome, <span>Stranger</span></h2>
             <div className="upper box">
-              <p>Days until my birthday.</p>
-              <Time />
+              <p className='bold'>Days until my birthday.</p>
+              <p className="numbers"><Time /></p>
+              <p className='watch-button'>WATCH NOW</p>
             </div>
-            <h2>Campaigns</h2>
+            <h3>Room for more dates</h3>
             <div className='lower box'></div>
           </section>
 
-          <div className='right-content'></div>
+          <div className='right-content'>
+            <section className='activity'>
+              <p className='activity-heading'>Activity</p>
+              <div className='activity-content box'>
+                <img src={jag} />
+                <p>Timothy Karlsson<span> - 34m ago</span></p>
+                <div className='chat-bubble'>
+                  <p>Hey, how's it going?</p>
+                </div>
+              </div>
 
-
+            </section>
+          </div>
         </section>
 
 
